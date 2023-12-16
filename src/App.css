@@ -1,42 +1,195 @@
+
+
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  min-height: inherit;
+  
+}
+.hero{
+  width: 100%;
+  height: 15em;
+  position: relative;
+  background-image: url("../images/bg-main-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.form{
+  padding-top: 5em;
+  text-align: left;
+  padding-left: 1em;
+  
+}
+p,input{
+  margin-bottom: 0.5em;
+}
+input{
+  border: 1px solid lightgray;
+  height: 3em;
+  padding-left: 0.5em;
+  width: 90%;
+  margin-bottom: 1em;
+}
+button{
+  display: block;
+  height: 3em;
+  width: 90%;
+  margin-top: 2em;
+  border-radius: 0.5em;
+  color: white;
+  background-color: rgb(30, 5, 54);
+  border: none;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+
+}
+.arzi{
+  width: 20%;
+  height: 3em;
+  border-radius: 0.4em;
+  margin-right: 0.4em;
+  border: 1px solid lightgray;
+  
+}
+.arzi:nth-child(3){
+  width: 50%;
+}
+.frontImg,.backImg{
+  width: 76%;
+  height: auto;
+  position: absolute;
+  display: block;
+
+}
+.frontImg{
+  bottom: -15%;
+  left: 5%;
+}
+.psuedo::after{
+  content: "0000 0000 0000 0000";
+  position: absolute;
+  bottom: 4%;
+  left: 8%;
+  width: 60%;
+  color: aliceblue;
+  letter-spacing: 0.15em;
+  font-size: 1.1em;
+  height: auto;
+  z-index: 99;
+}
+.psuedo::before{
+  content: "00/00";
+  position: absolute;
+  bottom: -10%;
+  left: 32%;
+  width: 60%;
+  color: rgb(208, 216, 226);
+  letter-spacing: 0.15em;
+  font-size: 1.1em;
+  height: auto;
+  z-index: 99;
+}
+.cvv{
+  position: absolute;
+  bottom: -10%;
+  left: 8%;
+  font-size: 1.1em;
+  color: rgb(208, 216, 226);
+
+}
+.backImg{
+  left: 18%;
+  top:12%;
+}
+.cardlogo{
+  width: 3em;
+  position: absolute;
+  bottom: 32%;
+  left: 8%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 337px) {
+  .cardlogo{
+    bottom: 20%;
   }
-  to {
-    transform: rotate(360deg);
+  .psuedo::after{
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 12em) {
+  .arzi{
+    width: 40%;
+  }
+  .arzi:nth-child(3){
+    width: 90%;
+  }
+  .form{
+    padding-bottom: 5em;
+  }
+ 
+}
+@media (min-width: 300px){
+  p>span{
+    margin-left: 3em;
+  }
+}
+@media (min-width: 370px){
+  .frontImg,.backImg{
+    width: 70%;
+  }
+}
+@media (min-width: 400px){
+  p>span{
+    margin-left: 4.5em;
+  }
+}
+@media (min-width: 470px){
+  .frontImg,.backImg{
+    width: 60%;
+  }
+  .psuedo::before{
+    left: 26%;
+  }
+}
+@media (min-width: 540px){
+  .frontImg,.backImg{
+    width: 48%;
+  }
+  .psuedo::after{
+    left: -2%;
+  }
+  .psuedo::before{
+    left: 15%;
+  }
+}
+@media (min-width: 700px){
+  #root{
+    display: flex;
+    flex-direction: row;
+  }
+  .hero{
+    height: 100vh;
+    width: 50%;
+    background-image: url("../images/bg-main-desktop.png");
+  }
+  .form{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  form{
+  padding-left: 13em;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (min-width: 900px){
+  .hero{
+    width: 30%;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  form{
+    padding-left: 20em;
+    }
 }

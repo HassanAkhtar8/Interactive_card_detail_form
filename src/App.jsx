@@ -1,33 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import './App.css';
+import front from '../images/bg-card-front.png';
+import back from '../images/bg-card-back.png';
+import sv from '../images/card-logo.svg'
 function App() {
-  const [count, setCount] = useState(0)
-
+const onSubmit = (e)=>{
+  e.preventdefault()
+}
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='hero'>
+      <img className='backImg' src={back} alt="card back" />
+      <div className='psuedo'>
+           <img className='frontImg' src={front} alt="card front" />
+           <span className='cvv'>Jake Paul</span>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+    
+    <img className='cardlogo' src={sv} alt="card logo" />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <div className='form'>
+
+      <form onSubmit={onSubmit}> 
+
+      <p>CARDHOLDERS NAME</p>
+      <input type="text" placeholder='e.g. Ali'/>
+      <p>CARD NUMBER</p>
+      <input placeholder='e.g. 1234 5678 9123 0000' />
+      <p>EXP. Date(MM/YY) <span>CVC</span> </p>
+      <span>
+        <input className='arzi' type="number" placeholder='MM' />
+        <input className='arzi' type="number" placeholder='YY' />
+        <input className='arzi' type="number" placeholder='e.g. 123' />
+      </span>
+      <button>Confirm</button>
+
+      </form>
+
+      </div>
+
     </>
   )
 }
