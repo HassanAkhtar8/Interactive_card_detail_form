@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Source code](https://github.com/HassanAkhtar8/Interactive_card_detail_form)
-- Live Site URL: [Live site](https://github.com/HassanAkhtar8/Interactive_card_detail_form/)
+- Live Site URL: [Live site](https://hassanakhtar8.github.io/Interactive_card_detail_form/)
 
 
 ### Built with
