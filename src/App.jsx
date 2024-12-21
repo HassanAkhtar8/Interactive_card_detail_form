@@ -12,11 +12,24 @@ const onSubmit = (e)=>{
       <img className='backImg' src={back} alt="card back" />
       <div className='psuedo'>
            <img className='frontImg' src={front} alt="card front" />
+           <span className='cnum'>0000 0000 0000 0000</span>
            <span className='cvv'>Jake Paul</span>
+           <img className='cardlogo' src={sv} alt="card logo" />
+           <span className='cexpire'>12 / 25</span>
       </div>
     
-    <img className='cardlogo' src={sv} alt="card logo" />
+   
+
       </div>
+
+
+
+
+
+
+
+
+
 
       <div className='form'>
 

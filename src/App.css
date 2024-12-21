@@ -8,7 +8,7 @@
 }
 .hero{
   width: 100%;
-  height: 15em;
+  height: 15rem;
   position: relative;
   background-image: url("../images/bg-main-mobile.png");
   background-size: cover;
@@ -44,6 +44,7 @@ button{
   letter-spacing: 0.1em;
 
 }
+
 .arzi{
   width: 20%;
   height: 3em;
@@ -55,18 +56,65 @@ button{
 .arzi:nth-child(3){
   width: 50%;
 }
-.frontImg,.backImg{
-  width: 76%;
-  height: auto;
+
+.frontImg{
+  width: 20rem;
   position: absolute;
   display: block;
-
-}
-.frontImg{
-  bottom: -15%;
   left: 5%;
+  bottom: -25%;
 }
-.psuedo::after{
+.backImg{
+  width: 20rem;
+  position:absolute;
+  left: 18%;
+  top:12%;
+}
+.cardlogo{
+  width: 3em;
+  position: absolute;
+  bottom: 4rem;
+  left: 8vw;
+}
+.cnum{
+  position: absolute;
+  bottom: 7%;
+  left: 14vw;
+  font-size: 1.1em;
+  letter-spacing: 0.2rem;
+  color: rgb(208, 216, 226);
+}
+.cvv{
+  position: absolute;
+  bottom: -15%;
+  left: 8vw;
+  font-size: 1.1em;
+  color: rgb(208, 216, 226);
+}
+.cexpire{
+  position: absolute;
+  bottom: -15%;
+  left: 17.5rem;
+  font-size: 1.1em;
+  color: rgb(208, 216, 226);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.psuedo::after{
   content: "0000 0000 0000 0000";
   position: absolute;
   bottom: 4%;
@@ -89,107 +137,4 @@ button{
   font-size: 1.1em;
   height: auto;
   z-index: 99;
-}
-.cvv{
-  position: absolute;
-  bottom: -10%;
-  left: 8%;
-  font-size: 1.1em;
-  color: rgb(208, 216, 226);
-
-}
-.backImg{
-  left: 18%;
-  top:12%;
-}
-.cardlogo{
-  width: 3em;
-  position: absolute;
-  bottom: 32%;
-  left: 8%;
-}
-
-@media (max-width: 337px) {
-  .cardlogo{
-    bottom: 20%;
-  }
-  .psuedo::after{
-    font-size: 0.7em;
-  }
-}
-@media (max-width: 12em) {
-  .arzi{
-    width: 40%;
-  }
-  .arzi:nth-child(3){
-    width: 90%;
-  }
-  .form{
-    padding-bottom: 5em;
-  }
- 
-}
-@media (min-width: 300px){
-  p>span{
-    margin-left: 3em;
-  }
-}
-@media (min-width: 370px){
-  .frontImg,.backImg{
-    width: 70%;
-  }
-}
-@media (min-width: 400px){
-  p>span{
-    margin-left: 4.5em;
-  }
-}
-@media (min-width: 470px){
-  .frontImg,.backImg{
-    width: 60%;
-  }
-  .psuedo::before{
-    left: 26%;
-  }
-}
-@media (min-width: 540px){
-  .frontImg,.backImg{
-    width: 48%;
-  }
-  .psuedo::after{
-    left: -2%;
-  }
-  .psuedo::before{
-    left: 15%;
-  }
-}
-@media (min-width: 700px){
-  #root{
-    display: flex;
-    flex-direction: row;
-  }
-  .hero{
-    height: 100vh;
-    width: 50%;
-    background-image: url("../images/bg-main-desktop.png");
-  }
-  .form{
-    padding: 0;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    
-  }
-  form{
-  padding-left: 13em;
-  }
-}
-
-@media (min-width: 900px){
-  .hero{
-    width: 30%;
-  }
-  form{
-    padding-left: 20em;
-    }
-}
+}*/
