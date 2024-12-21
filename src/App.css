@@ -44,7 +44,7 @@ button{
 
 }
 
-.arzi{
+.input{
   width: 20%;
   height: 3em;
   border-radius: 0.4em;
@@ -69,13 +69,13 @@ button{
   left: 18%;
   top:12%;
 }
-.cardlogo{
+.cardLogo{
   width: 3em;
   position: absolute;
   bottom: 4rem;
   left: 8vw;
 }
-.cnum{
+.cardNumber{
   position: absolute;
   bottom: 7%;
   left: 4rem;
@@ -83,14 +83,14 @@ button{
   letter-spacing: 0.2rem;
   color: rgb(208, 216, 226);
 }
-.cvv{
+.cardName{
   position: absolute;
   bottom: -15%;
   left: 8vw;
   font-size: 1.1em;
   color: rgb(208, 216, 226);
 }
-.cexpire{
+.cardExpire{
   position: absolute;
   bottom: -15%;
   left: 15rem;
@@ -113,21 +113,22 @@ button{
   .frontImg{
     top: 15rem;
   }
-  .cnum{
+  .cardNumber{
     top: 19.5rem;
     left: 3.5rem;
   }
-  .cardlogo{
+  .cardLogo{
     top: 16rem;
     left: 3rem;
   }
-  .cexpire{
+  .cardExpire{
     top: 23rem;
   }
-  .cvv{
+  .cardName{
     top: 23rem;
     left: 3rem
   }
+
 }
 
 
